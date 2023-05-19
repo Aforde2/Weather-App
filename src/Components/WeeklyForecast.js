@@ -17,7 +17,7 @@ const WeeklyForecast = ({ name }) => {
   }, [name]);
 
   return (
-    <CardGroup>
+    <CardGroup onSubmit={WeeklyForecast}>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src="image" id="CardImage" />
         <Card.Body>

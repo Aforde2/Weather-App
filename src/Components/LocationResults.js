@@ -26,6 +26,8 @@ const [display, setdisplay] = useState(0)
         rainydayImg:('/Images/Rainyday.jpg'),
         snowydayImg:('/Images/Snowyday.jpg'),
         thunderstormImg:('/Images/Thunderstormday.jpg'),
+        mistydayimg:('/Images/Mistyday.jpg'),
+        overcastimg:('/Images/Cloudyday.jpg'),
 
     }
     const changedisplay = () => {
@@ -51,25 +53,39 @@ const [display, setdisplay] = useState(0)
       setLon(weatherdata.coord.lon)
       //started creating if statement not sure if this is right started trying to match description to an image but its not showing up 
       if(weatherdata.weather[0].description === "broken clouds"){
-        setimg(obj.sunnyImg);
+        setimg(obj.partlycloudyImg);
       }
-      if(weatherdata.weather[0].main === "Cloudy"){
+      if(weatherdata.weather[0].main === "cloudy"){
         setimg(obj.cloudyImg);
       }
-      if(weatherdata.weather[0].main === "Partlycloudy"){
+      if(weatherdata.weather[0].main === "partly cloudy"){
         setimg(obj.partlycloudyImg);
       }
       if(weatherdata.weather[0].description === "light rain"){
         setimg(obj.rainydayImg)
       }
-
+      if(weatherdata.weather[0].description === "mist"){
+        setimg(obj.mistydayimg)
+      }
+      if(weatherdata.weather[0].description === "overcast clouds"){
+      setimg(obj.overcastimg)
+    }
+    if(weatherdata.weather[0].description === "sunny"){
+        setimg(obj.sunnyImg)
+    }
+    if(weatherdata.weather[0].description === "clear sky"){
+        setimg(obj.sunnyImg)
+    }
+    if(weatherdata.weather[0].description === "scattered clouds"){
+        setimg(obj.partlycloudyImg)
+    }
     }
   }, [weatherdata]);
 
   if (temp !== '') {
     return (
       <div>
-<Card style={{ width: '18rem' }}>
+<Card onSubmit={WeeklyForecast}style={{ width: '18rem' }}>
           <Card.Img variant="top" src={image} id="CardImage" />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
@@ -78,13 +94,13 @@ const [display, setdisplay] = useState(0)
           </Card.Body>
           <Button>Click Here for Weekly Forecast</Button>
         </Card>
-        <div hidden={temp === ''}>
-          <WeeklyForecast name={name} />
+        {/* <div hidden={temp === ''}>
+          <WeeklyForecast name={name} /> */}
         </div>
-      </div>
+    //   </div>
     );
   } else {
-    return <WeeklyForecast />;
+    // return <WeeklyForecast />;
   }
 }
 
