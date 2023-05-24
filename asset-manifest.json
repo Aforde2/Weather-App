@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Aforde2/Weather-App.git/static/css/main.f41b189e.css",
-    "main.js": "/Aforde2/Weather-App.git/static/js/main.65090716.js",
-    "static/js/787.d9312eb8.chunk.js": "/Aforde2/Weather-App.git/static/js/787.d9312eb8.chunk.js",
-    "static/media/Background.jpg": "/Aforde2/Weather-App.git/static/media/Background.a84656791c5628769ec1.jpg",
-    "index.html": "/Aforde2/Weather-App.git/index.html",
-    "main.f41b189e.css.map": "/Aforde2/Weather-App.git/static/css/main.f41b189e.css.map",
-    "main.65090716.js.map": "/Aforde2/Weather-App.git/static/js/main.65090716.js.map",
-    "787.d9312eb8.chunk.js.map": "/Aforde2/Weather-App.git/static/js/787.d9312eb8.chunk.js.map"
+    "main.css": "/Weather-App/static/css/main.e709c701.css",
+    "main.js": "/Weather-App/static/js/main.bcdde67c.js",
+    "static/js/787.d9312eb8.chunk.js": "/Weather-App/static/js/787.d9312eb8.chunk.js",
+    "static/media/Background.jpg": "/Weather-App/static/media/Background.a84656791c5628769ec1.jpg",
+    "index.html": "/Weather-App/index.html",
+    "main.e709c701.css.map": "/Weather-App/static/css/main.e709c701.css.map",
+    "main.bcdde67c.js.map": "/Weather-App/static/js/main.bcdde67c.js.map",
+    "787.d9312eb8.chunk.js.map": "/Weather-App/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f41b189e.css",
-    "static/js/main.65090716.js"
+    "static/css/main.e709c701.css",
+    "static/js/main.bcdde67c.js"
   ]
 }
