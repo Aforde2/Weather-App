@@ -18,14 +18,14 @@ function LocationResults({ weatherdata }) {
   const [display, setdisplay] = useState(0);
 
   let obj = {
-    sunnyImg: '/Images/Sunnyday.jpg',
-    cloudyImg: '/Images/Cloudyday.jpg',
-    partlycloudyImg: '/Images/Partlycloudyday.jpg',
-    rainydayImg: '/Images/Rainyday.jpg',
-    snowydayImg: '/Images/Snowyday.jpg',
-    thunderstormImg: '/Images/Thunderstormday.jpg',
-    mistydayimg: '/Images/Mistyday.jpg',
-    overcastimg: '/Images/Cloudyday.jpg',
+    sunnyImg: './Images/Sunnyday.jpg',
+    cloudyImg: './Images/Cloudyday.jpg',
+    partlycloudyImg: './Images/Partlycloudyday.jpg',
+    rainydayImg: './Images/Rainyday.jpg',
+    snowydayImg: './Images/Snowyday.jpg',
+    thunderstormImg: './Images/Thunderstormday.jpg',
+    mistydayimg: './Images/Mistyday.jpg',
+    overcastimg: './Images/Cloudyday.jpg',
   };
 
 
